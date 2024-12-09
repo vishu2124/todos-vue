@@ -20,7 +20,7 @@ This is a Todo Application built with Vue 3 and Vite. It allows users to manage 
 
 ### 4. **Sort Todos**
 
-- Sort tasks by priority: **Critical > Moderate > Optional**.
+- Sort tasks by priority: **Critical > Moderate > Optional**. (Ascending and Descending order)
 
 ### 5. **Clear All Todos**
 
