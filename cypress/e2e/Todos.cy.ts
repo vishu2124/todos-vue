@@ -91,7 +91,7 @@ describe('Todo Form with Sorting', () => {
     cy.get('li').contains('moderate').should('be.visible')
 
     cy.get('button').contains('Sort').click()
-    cy.wait(2000)
+    //cy.wait(2000)
 
     cy.get('.priority-badge').first().should('contain.text', 'optional')
     cy.get('.priority-badge').eq(1).should('contain.text', 'moderate')
@@ -175,7 +175,7 @@ describe('Todo Form with Deletion', () => {
     cy.get('li').contains('optional').should('be.visible')
 
     cy.get('button').contains('Sort').click()
-    cy.wait(2000)
+    //cy.wait(2000)
 
     cy.get('button').contains('Delete').last().click()
     cy.get('li').contains('Task 3').should('not.exist')

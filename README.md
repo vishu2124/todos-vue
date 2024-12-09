@@ -1,20 +1,56 @@
-# todos-vue
+# TodoApp
 
-This template should help get you started developing with Vue 3 in Vite.
+This is a Todo Application built with Vue 3 and Vite. It allows users to manage tasks efficiently with features such as adding, editing, deleting, sorting, and clearing tasks.
+
+---
+
+## Features
+
+### 1. **Add Todos**
+
+- Add tasks with a title, priority, and assignee.
+- Supported priorities: Critical, Moderate, Optional.
+- Easily assign tasks to team members.
+
+### 2. **Edit Todos**
+
+- Modify existing tasks by updating the title, priority, or assignee.
+
+### 3. **Delete Todos**
+
+- Remove individual tasks from the list.
+
+### 4. **Sort Todos**
+
+- Sort tasks by priority: **Critical > Moderate > Optional**.
+
+### 5. **Clear All Todos**
+
+- Remove all tasks from the list with a single click.
+- Displays a "Nothing in the list" message when the list is empty.
+
+### 6. **Responsive Design**
+
+- Optimized for use on desktop and mobile devices.
+
+---
 
 ## Recommended IDE Setup
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- [VSCode](https://code.visualstudio.com/) with the [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) extension (disable Vetur).
 
-## Type Support for `.vue` Imports in TS
+---
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+## Type Support for `.vue` Imports in TypeScript
 
-## Customize configuration
+- To enable type checking for `.vue` files, this project uses `vue-tsc` instead of the default `tsc`.
+- Install the [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) extension for better TypeScript integration.
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+---
 
 ## Project Setup
+
+Install dependencies:
 
 ```sh
 npm install
@@ -26,7 +62,7 @@ npm install
 npm run dev
 ```
 
-### Type-Check, Compile and Minify for Production
+### Type-Check, Compile, and Minify for Production
 
 ```sh
 npm run build
@@ -40,14 +76,13 @@ npm run test:unit
 
 ### Run End-to-End Tests with [Cypress](https://www.cypress.io/)
 
+Run against the development server:
+
 ```sh
 npm run test:e2e:dev
 ```
 
-This runs the end-to-end tests against the Vite development server.
-It is much faster than the production build.
-
-But it's still recommended to test the production build with `test:e2e` before deploying (e.g. in CI environments):
+For production build testing:
 
 ```sh
 npm run build
@@ -59,3 +94,18 @@ npm run test:e2e
 ```sh
 npm run lint
 ```
+
+---
+
+## End-to-End Functionality Tests (Cypress)
+
+This application is equipped with a suite of Cypress tests to validate its functionality:
+
+1. **App Loading**: Ensures the app loads and displays the main UI components correctly.
+2. **Adding Todos**: Verifies that tasks can be added with the correct details.
+3. **Editing Todos**: Ensures users can edit existing tasks and see the updates.
+4. **Deleting Todos**: Confirms that tasks can be individually removed from the list.
+5. **Sorting Todos**: Validates the sorting functionality for tasks based on priority.
+6. **Clearing Todos**: Tests the "Clear All" functionality to ensure it empties the task list.
+
+---
