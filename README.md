@@ -2,8 +2,6 @@
 
 This is a Todo Application built with Vue 3 and Vite. It allows users to manage tasks efficiently with features such as adding, editing, deleting, sorting, and clearing tasks.
 
----
-
 ## Features
 
 ### 1. **Add Todos**
@@ -32,14 +30,6 @@ This is a Todo Application built with Vue 3 and Vite. It allows users to manage 
 ### 6. **Responsive Design**
 
 - Optimized for use on desktop and mobile devices.
-
----
-
-## Recommended IDE Setup
-
-- [VSCode](https://code.visualstudio.com/) with the [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) extension (disable Vetur).
-
----
 
 ## Type Support for `.vue` Imports in TypeScript
 
@@ -95,8 +85,6 @@ npm run test:e2e
 npm run lint
 ```
 
----
-
 ## End-to-End Functionality Tests (Cypress)
 
 This application is equipped with a suite of Cypress tests to validate its functionality:
@@ -108,4 +96,9 @@ This application is equipped with a suite of Cypress tests to validate its funct
 5. **Sorting Todos**: Validates the sorting functionality for tasks based on priority.
 6. **Clearing Todos**: Tests the "Clear All" functionality to ensure it empties the task list.
 
----
+Before running the app, ensure the following tools are installed:
+
+| Tool   | Minimum Version | Installation Guide                     |
+| ------ | --------------- | -------------------------------------- |
+| NodeJS | v22.11.0        | [Download NodeJS](https://nodejs.org/) |
+| npm    | 10.9.0          | Bundled with NodeJS                    |
